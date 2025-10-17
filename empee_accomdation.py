@@ -93,7 +93,15 @@ if select_option == "Hostels":
         },
         {
             "filename": "male hostel video 7.mp4",
-            "description": "Student testimonials and reviews."
+            "description": """
+            🏡 MALE PRIVATE HOSTEL VACANCY – NOW AVAILABLE (Pako, Akoka, Lagos)
+                       
+            A 4-man room (male-only) private hostel is now available at Pako, Akoka — strategically 
+            located near both Yabatech and UNILAG (just a 10-minute walk to UNILAG back gate)
+            🏷 Rate:
+            - ₦730,000 total package per bedspace (1st year)
+           """
+            
         },
         {
             "filename": "male hostel video 8.mp4",
