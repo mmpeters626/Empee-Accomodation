@@ -103,10 +103,64 @@ if select_option == "Hostels":
             "filename": "male hostel video 9.mp4",
             "description": "Hostel entrance and reception area."
         },
+        
         {
-            "filename": "male hostel video2.mp4",
+            "filename": "male hostel video 10.mp4",
             "description": "Additional view of hostel facilities."
-        }
+        },
+        {
+            "filename": "male hostel video 11.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 12.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 13.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 14.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 15.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 16.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 17.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 18.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 19.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 20.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 21.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 22.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 23.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        
     ]
 
     # Loop through each video and display with comment
@@ -114,7 +168,7 @@ if select_option == "Hostels":
         filename = video_info["filename"]
         description = video_info["description"]
         if os.path.exists(filename):
-            st.video(filename, width=600)
+            st.video(filename, width=350)
             # Display the comment or description below the video
             st.markdown(f"**Description:** {description}")
             st.markdown("---")
@@ -271,3 +325,7 @@ elif select_option == "Contact":
                 """)
     st.markdown("### _Micheal Peters_")
     st.markdown("---")
+    
+    
+    
+   # py -m streamlit run empee_accomdation.py
