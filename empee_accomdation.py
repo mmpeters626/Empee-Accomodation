@@ -74,11 +74,11 @@ if select_option == "Private Hostels off campus":
     image_with_comments = [
         {
             "filename": "female hostel picture 2 room.jpg",
-            "description": "**4 man room female private hostel** available\n"
-            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+            "description": "**4 man room female private hostel** available\n\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
 
-            "**Hostel facilities includes**\n\n"
+            "## **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
              "- Each bunks has a fan\n"
             "- Constant water supply\n"
@@ -122,9 +122,9 @@ if select_option == "Private Hostels off campus":
     videos_with_comments = [
         {
             "filename": "This hostel is.mp4",
-            "description": "**4 man room female private hostel** available\n"
-            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+            "description": "**4 man room female private hostel** available\n\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
 
             "**Hostel facilities includes**\n\n"
             "- 24/7 Electricity Power Supply\n"
@@ -133,7 +133,7 @@ if select_option == "Private Hostels off campus":
             "- tiolets and Baths\n"
             "- Tight security etc\n"
             "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n\n"
             "https://wa.me/2348146399129"
         },
         
