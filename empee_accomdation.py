@@ -70,7 +70,7 @@ if select_option == "Private Hostels off campus":
     
     # --- FEMALE HOSTEL IMAGES SECTION ---
     st.subheader("Female Hostel Images")
-
+    
     image_with_comments = [
         {
             "filename": "female hostel picture 2 room.jpg",
@@ -78,16 +78,18 @@ if select_option == "Private Hostels off campus":
             "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
             "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
 
-            "### **Hostel Facilities**\n\n"
+            "#### **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
              "- Each bunks has a fan\n"
             "- Constant water supply\n"
             "- tiolets and Baths\n"
             "- Tight security etc\n"
             "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
             "https://wa.me/2348146399129"
         },
+        
+        
         {
             "filename": "female hostel picture 2 kitchen.jpg",
             "description": "Tour of the male hostel rooms."
@@ -120,195 +122,316 @@ if select_option == "Private Hostels off campus":
 
     # List of videos with descriptions
     videos_with_comments = [
+           
         {
-            "filename": "This hostel is.mp4",
-            "description": "**4 man room female private hostel** available\n\n"
-            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
+            "filename": "male hostel video 1.mp4",
+            "description": "**8 man room male private hostel**\n"
+            "**Location:** moore road, off university road, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 530k total package per bed space for the 1st year and 450 in subsequent years....\n\n"
 
-            "**Hostel facilities includes**\n\n"
+            "#### **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
-             "- Each bunks has a fan\n"
             "- Constant water supply\n"
             "- tiolets and Baths\n"
             "- Tight security etc\n"
-            "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n\n"
+            "- Close Proximity to both Unilag and Yabatech etc\n\n"
+            
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
             "https://wa.me/2348146399129"
         },
         
         {
-            "filename": "male hostel video 1.mp4",
-            "description": "**4 man room female private hostel** available\n"
-            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+            "filename": "male hostel video 2.mp4",
+            "description": "**4 man room male private hostel** available\n"
+            "**Location:** Pako, Akoka, Lagos, very close to yabatech/unilag\n"
+            "**Price:** 730k total package per bed space for a year and 650k in subsequent years....\n\n"
 
-            "**Hostel facilities includes**\n\n"
+            "#### **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
-             "- Each bunks has a fan\n"
             "- Constant water supply\n"
-            "- tiolets and Baths\n"
+            "- Tiolets and Baths\n"
             "- Tight security etc\n"
-            "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "- 10 minute walk to Unilag back gate\n"
+            "- Working Air conditioner\n"
+            "- Serene Environment\n"
+            "- Inverter\n\n"
+
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
             "https://wa.me/2348146399129"
         },
         
         {
             "filename": "male hostel video 3.mp4",
-            "description": "**4 man room female private hostel** available\n"
-            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+            "description": "**6 man room male private hostel** available\n"
+            "**Location:** Pako, Akoka, Lagos, very close to yabatech/unilag\n"
+            "**Price:** 680k total package per bed space for a year and 600k in subsequent years....\n\n"
 
-            "**Hostel facilities includes**\n\n"
+            "#### **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
-             "- Each bunks has a fan\n"
             "- Constant water supply\n"
-            "- tiolets and Baths\n"
+            "- Tiolets and Baths\n"
             "- Tight security etc\n"
-            "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "- 10 minute walk to Unilag back gate\n"
+            "- Working Air conditioner\n"
+            "- Serene Environment\n"
+            "- Inverter\n\n"
+
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
             "https://wa.me/2348146399129"
         },
         
         {
             "filename": "male hostel video 4.mp4",
-            "description": "**4 man room female private hostel** available\n"
+          "description": "**2 man room female private hostel** available\n"
             "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
-
-            "**Hostel facilities includes**\n\n"
+            "**Price:** 780k total package per bed space for the 1st year and 700 in subsequent years....\n\n"
+            "#### **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
-             "- Each bunks has a fan\n"
             "- Constant water supply\n"
-            "- tiolets and Baths\n"
+            "- Tiolets and Baths\n"
             "- Tight security etc\n"
-            "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
-            "https://wa.me/2348146399129"
+            "- 10 minute walk to Unilag back gate\n"
+            "- Working Air conditioner\n"
+            "- Serene Environment\n"
+            "- Inverter\n\n"
+
         },
         
         {
             "filename": "male hostel video 5.mp4",
             "description": "**4 man room female private hostel** available\n"
             "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+            "**Price:** 730k total package per bed space for the 1st year and 650 in subsequent years....\n\n"
 
-            "**Hostel facilities includes**\n\n"
+             "#### **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
-             "- Each bunks has a fan\n"
             "- Constant water supply\n"
-            "- tiolets and Baths\n"
+            "- Tiolets and Baths\n"
             "- Tight security etc\n"
-            "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "- 10 minute walk to Unilag back gate\n"
+            "- Working Air conditioner\n"
+            "- Serene Environment\n"
+            "- Inverter\n\n"
+
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
             "https://wa.me/2348146399129"
         },
         
         {
-            "filename": "male hostel video 6.mp4",
-           "description": "**4 man room female private hostel** available\n"
-            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
-
-            "**Hostel facilities includes**\n\n"
-            "- 24/7 Electricity Power Supply\n"
-             "- Each bunks has a fan\n"
-            "- Constant water supply\n"
-            "- tiolets and Baths\n"
-            "- Tight security etc\n"
-            "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
-            "https://wa.me/2348146399129"
-        },
-        
-        {
-            "filename": "male hostel video 7.mp4",
+           "filename": "male hostel video 5.mp4",
             "description": "**4 man room female private hostel** available\n"
             "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+            "**Price:** 730k total package per bed space for the 1st year and 650 in subsequent years....\n\n"
 
-            "**Hostel facilities includes**\n\n"
+             "#### **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
-             "- Each bunks has a fan\n"
             "- Constant water supply\n"
-            "- tiolets and Baths\n"
+            "- Tiolets and Baths\n"
             "- Tight security etc\n"
-            "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "- 10 minute walk to Unilag back gate\n"
+            "- Working Air conditioner\n"
+            "- Serene Environment\n"
+            "- Inverter\n\n"
+
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
+            "https://wa.me/2348146399129"
+        },
+        
+        { 
+            "filename": "male hostel video 5.mp4",
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 730k total package per bed space for the 1st year and 650 in subsequent years....\n\n"
+
+             "#### **Hostel Facilities**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+            "- Constant water supply\n"
+            "- Tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- 10 minute walk to Unilag back gate\n"
+            "- Working Air conditioner\n"
+            "- Serene Environment\n"
+            "- Inverter\n\n"
+
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
             "https://wa.me/2348146399129"
         },
         
         {
             "filename": "male hostel video 8.mp4",
             "description": "**4 man room female private hostel** available\n"
-            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+            "**Location:** Iwaya, akoka, Yaba, lagos, unilag\n"
+            "**Price:** 600k total package per bed space for the 1st year and 500k in subsequent years....\n\n"
 
-            "**Hostel facilities includes**\n\n"
+            "#### **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
-             "- Each bunks has a fan\n"
+            "- Working Air conditioner\n"
             "- Constant water supply\n"
             "- tiolets and Baths\n"
             "- Tight security etc\n"
+            "- 1 minute walk to unilag back gate\n"
             "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
             "https://wa.me/2348146399129"
         },
         
         {
             "filename": "male hostel video 9.mp4",
-           "description": "**4 man room female private hostel** available\n"
+          "description": "**4 man room female private hostel** available\n"
             "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
-            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
 
-            "**Hostel facilities includes**\n\n"
+            "#### **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
              "- Each bunks has a fan\n"
             "- Constant water supply\n"
             "- tiolets and Baths\n"
             "- Tight security etc\n"
             "- Hotplate is available\n\n"
-            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
             "https://wa.me/2348146399129"
         },
         
         {
             "filename": "male hostel video 10.mp4",
-            "description": "Additional view of hostel facilities."
+           "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
+
+            "#### **Hostel Facilities**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
+            "https://wa.me/2348146399129"
         },
         {
             "filename": "male hostel video 11.mp4",
-            "description": "Additional view of hostel facilities."
+           "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
+
+            "#### **Hostel Facilities**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 12.mp4",
-            "description": "Additional view of hostel facilities."
+           "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
+
+            "#### **Hostel Facilities**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 13.mp4",
-            "description": "Additional view of hostel facilities."
+           "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
+
+            "#### **Hostel Facilities**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 14.mp4",
-            "description": "Additional view of hostel facilities."
+           "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
+
+            "#### **Hostel Facilities**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 15.mp4",
-            "description": "Additional view of hostel facilities."
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
+
+            "#### **Hostel Facilities**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 16.mp4",
-            "description": "Additional view of hostel facilities."
+           "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
+
+            "#### **Hostel Facilities**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 17.mp4",
-            "description": "Additional view of hostel facilities."
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
+
+            "#### **Hostel Facilities**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a direct message to Michael Peters using the link below to reserve your bed space in this hostel:\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 18.mp4",
             "description": "Additional view of hostel facilities."
         },
+        
         {
             "filename": "male hostel video 19.mp4",
             "description": "Additional view of hostel facilities."
@@ -336,7 +459,7 @@ if select_option == "Private Hostels off campus":
         filename = video_info["filename"]
         description = video_info["description"]
         if os.path.exists(filename):
-            st.video(filename, format="video/mp4", start_time=0) # Added format for robustness
+            st.video(filename, format="video/mp4", start_time=0, width = 350) # Added format for robustness
             # Display the comment or description below the video
             st.markdown(f"**Description:** {description}")
             st.markdown("---")
