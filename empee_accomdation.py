@@ -78,7 +78,7 @@ if select_option == "Private Hostels off campus":
             "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
             "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
 
-            "## **Hostel Facilities**\n\n"
+            "### **Hostel Facilities**\n\n"
             "- 24/7 Electricity Power Supply\n"
              "- Each bunks has a fan\n"
             "- Constant water supply\n"
