@@ -1,16 +1,18 @@
 import streamlit as st
 import os
+import base64
 
+# --- APP CONFIGURATION ---
 st.set_page_config(page_title='Empee Accommodation Web App', layout="wide")
 
 st.title('Welcome to Empee accommodation web app')
 
-# Sidebar
+# --- SIDEBAR ---
 with st.sidebar:
     st.header("Empee Accommodation")
     st.write("Welcome!!!. 👋")
     st.markdown("---")
-    select_option = st.radio("Go to", ("Hostels", "Portfolio", "About", "Contact"))
+    select_option = st.radio("Go to", ("Private Hostels off campus", "Portfolio", "About", "Contact"))
     st.markdown("---")
     st.subheader("Settings")
     st.write("Pick a theme color:")
@@ -21,92 +23,312 @@ with st.sidebar:
     st.subheader("📫 Contact Me")
     st.markdown("Feel free to reach out via [mmpeters626@gmail.com](mailto:mmpeters626@gmail.com) or connect on [https://www.linkedin.com/in/petersmicheal/](https://www.linkedin.com/)")
 
-if select_option == "Hostels":
+# --- GLOBAL IMAGE HELPER FUNCTION ---
+# Defined once globally, NOT inside the 'Hostels' section
+def get_base64_image(image_path):
+    try:
+        with open(image_path, "rb") as img_file:
+            return base64.b64encode(img_file.read()).decode("utf-8")
+    except FileNotFoundError:
+        # st.error(f"Error: The file '{image_path}' was not found.")
+        # Removed st.error here to avoid cluttering the app on every run if files are missing
+        return None
+
+# --- MAIN CONTENT BODY ---
+
+if select_option == "Private Hostels off campus":
     st.markdown(
         """
         ## These are the hostels for both male and female available for booking with their prices.
         NOTE: the ones taken are marked as taken
         """
     )
-
     st.write("Male Hostels")
-
-    # Display profile image
-    def get_base64_image(image_path):
-        try:
-            with open(image_path, "rb") as img_file:
-                return base64.b64encode(img_file.read()).decode("utf-8")
-        except FileNotFoundError:
-            st.error(f"Error: The image file '{image_path}' was not found. Please make sure it's in the same directory.")
-            return None
-
-    profile_image_base64 = get_base64_image("My Profile Pics.jpg")
-    if profile_image_base64:
-        st.markdown(f'<img src="data:image/png;base64,{profile_image_base64}" class="profile-img">', unsafe_allow_html=True)
-
     st.markdown("---")
 
- 
-
-
-    # Function to load and encode image to base64
-    def get_base64_image(image_path):
-        try:
-            with open(image_path, "rb") as img_file:
-                return base64.b64encode(img_file.read()).decode("utf-8")
-        except FileNotFoundError:
-            st.error(f"Error: The image file '{image_path}' was not found. Please ensure it is in the correct directory.")
-            return None
-
-    # Display profile image
+    # --- PROFILE IMAGE (Moved inside the IF block and using the global function) ---
+    # The image path "My Profile Pics.jpg" must exist in the same folder as this script.
     profile_image_base64 = get_base64_image("My Profile Pics.jpg")
     if profile_image_base64:
+        # Added basic CSS to make the profile image display better, e.g., circular
+        st.markdown("""
+            <style>
+            .profile-img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+            </style>
+        """, unsafe_allow_html=True)
         st.markdown(f'<img src="data:image/png;base64,{profile_image_base64}" class="profile-img">', unsafe_allow_html=True)
-
+    else:
+        st.error(f"Error: Profile image 'My Profile Pics.jpg' not found.")
+    
     st.markdown("---")
+    
+    # --- FEMALE HOSTEL IMAGES SECTION ---
+    st.subheader("Female Hostel Images")
+
+    image_with_comments = [
+        {
+            "filename": "female hostel picture 2 room.jpg",
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+
+            "**Hostel facilities includes**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "https://wa.me/2348146399129"
+        },
+        {
+            "filename": "female hostel picture 2 kitchen.jpg",
+            "description": "Tour of the male hostel rooms."
+        },
+        {
+            "filename": "female hostel picture 1.jpg",
+            "description": "Common areas in the hostel."
+        },
+        {
+            "filename": "female hostel picture 1.jpg",
+            "description": "Hostel dining area."
+        }
+    ]
+
+    # Display images
+    for image_info in image_with_comments:
+        filename = image_info["filename"]
+        description = image_info["description"]
+        if os.path.exists(filename):
+            st.image(filename, width=350)
+            st.markdown(f"**Description:** {description}")
+            st.markdown("---")
+        else:
+            st.error(f"Image file '{filename}' not found for female hostels.")
+            
+    st.markdown("---")
+
+    # --- MALE HOSTEL VIDEOS SECTION (INCLUDING THE CORRECTED DESCRIPTION) ---
+    st.subheader("Male Hostel Videos")
 
     # List of videos with descriptions
     videos_with_comments = [
         {
             "filename": "This hostel is.mp4",
-            "description": "This is an overview of the hostel facilities."
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+
+            "**Hostel facilities includes**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 1.mp4",
-            "description": "Tour of the male hostel rooms."
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+
+            "**Hostel facilities includes**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 3.mp4",
-            "description": "Common areas in the hostel."
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+
+            "**Hostel facilities includes**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 4.mp4",
-            "description": "Hostel dining area."
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+
+            "**Hostel facilities includes**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 5.mp4",
-            "description": "View of the hostel's recreational facilities."
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+
+            "**Hostel facilities includes**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 6.mp4",
-            "description": "Hostel security and safety features."
+           "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+
+            "**Hostel facilities includes**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 7.mp4",
-            "description": "Student testimonials and reviews."
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+
+            "**Hostel facilities includes**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 8.mp4",
-            "description": "Night view of the hostel premises."
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+
+            "**Hostel facilities includes**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "https://wa.me/2348146399129"
         },
+        
         {
             "filename": "male hostel video 9.mp4",
-            "description": "Hostel entrance and reception area."
+           "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
+            "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n"
+
+            "**Hostel facilities includes**\n\n"
+            "- 24/7 Electricity Power Supply\n"
+             "- Each bunks has a fan\n"
+            "- Constant water supply\n"
+            "- tiolets and Baths\n"
+            "- Tight security etc\n"
+            "- Hotplate is available\n\n"
+            "Send a dm to Micheal Peters through the iink below to book a bed space in this hostel\n"
+            "https://wa.me/2348146399129"
+        },
+        
+        {
+            "filename": "male hostel video 10.mp4",
+            "description": "Additional view of hostel facilities."
         },
         {
-            "filename": "male hostel video2.mp4",
+            "filename": "male hostel video 11.mp4",
             "description": "Additional view of hostel facilities."
-        }
+        },
+        {
+            "filename": "male hostel video 12.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 13.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 14.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 15.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 16.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 17.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 18.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 19.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 20.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 21.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 22.mp4",
+            "description": "Additional view of hostel facilities."
+        },
+        {
+            "filename": "male hostel video 23.mp4",
+            "description": "Additional view of hostel facilities."
+        },
     ]
 
     # Loop through each video and display with comment
@@ -114,14 +336,17 @@ if select_option == "Hostels":
         filename = video_info["filename"]
         description = video_info["description"]
         if os.path.exists(filename):
-            st.video(filename, width=600)
+            st.video(filename, format="video/mp4", start_time=0, width = 350) # Added format for robustness
             # Display the comment or description below the video
             st.markdown(f"**Description:** {description}")
             st.markdown("---")
         else:
             st.error(f"Video file '{filename}' not found.")
 
-    # Resume section
+    # --- RESUME SECTION (Still included in Hostels option, but logically should be separate) ---
+    # NOTE: The resume content is currently displayed under the 'Hostels' tab.
+    # I recommend moving this content to a separate elif block for the "Portfolio" or "About" tab
+    # if you want a cleaner structure. I've left it here to fix the original code errors.
     st.title("My Resume")
     st.markdown("### MICHEAL PETERS")
     st.markdown(
@@ -250,7 +475,7 @@ elif select_option == "About":
         """
     )
     st.markdown("---")
-   
+    
     st.markdown("- Studying")
     st.markdown("- Making Researches")
     st.markdown("- Praying")
@@ -271,3 +496,7 @@ elif select_option == "Contact":
                 """)
     st.markdown("### _Micheal Peters_")
     st.markdown("---")
+    
+    
+
+#py -m streamlit run empee_accomdation.py
