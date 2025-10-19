@@ -74,8 +74,8 @@ if select_option == "Private Hostels off campus":
     image_with_comments = [
         {
             "filename": "female hostel picture 2 room.jpg",
-            "description": "**4 man room female private hostel** available\n\n"
-            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n\n"
+            "description": "**4 man room female private hostel** available\n"
+            "**Location:** Pako, akoka, Yaba, lagos, very close to yabatech/unilag\n"
             "**Price:** 480k total package per bed space for the 1st year and 400 in subsequent years....\n\n"
 
             "## **Hostel Facilities**\n\n"
