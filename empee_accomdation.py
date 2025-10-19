@@ -336,7 +336,7 @@ if select_option == "Private Hostels off campus":
         filename = video_info["filename"]
         description = video_info["description"]
         if os.path.exists(filename):
-            st.video(filename, format="video/mp4", start_time=0, width = 350) # Added format for robustness
+            st.video(filename, format="video/mp4", start_time=0) # Added format for robustness
             # Display the comment or description below the video
             st.markdown(f"**Description:** {description}")
             st.markdown("---")
